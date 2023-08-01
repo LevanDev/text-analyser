@@ -1,4 +1,6 @@
 import './App.css'
+import { ResultBox } from './ResultBox'
+import { TextArea } from './TextArea'
 
 function App() {
 
@@ -7,38 +9,17 @@ function App() {
     <div>
       <div className='main-div'>
         <div className='result-bar'>
-          <div className='result-box'>
-            <span className='box-title'>words</span>
-            <span className='box-value'>0</span>
-          </div>
-          <div className='result-box'>
-            <span className='box-title'>characters</span>
-            <span className='box-value'>0</span>
-          </div>
-          <div className='result-box'>
-            <span className='box-title'>Sentences</span>
-            <span className='box-value'>0</span>
-          </div>
-          <div className='result-box'>
-            <span className='box-title'>Paragraphs</span>
-            <span className='box-value'>0</span>
-          </div>
-          <div className='result-box'>
-            <span className='box-title'>pronouns</span>
-            <span className='box-value'>0</span>
-          </div>
+          <ResultBox title="words" value="0" />
+          <ResultBox title="characters" value="0" />
+          <ResultBox title="Sentences" value="0" />
+          <ResultBox title="Paragraphs" value="0" />
+          <ResultBox title="pronouns" value="0" />
         </div>
       </div>
-      <textarea className='text-area' placeholder='paste your text here'></textarea>
+      <TextArea />
       <div className='bottom-result-box'>
-        <div className='result-box'>
-          <span className='box-title'>Average Reading Time</span>
-          <span className='box-value'></span>
-        </div>
-        <div className='result-box'>
-          <span className='box-title'>Longest Word</span>
-          <span className='box-value'></span>
-        </div>
+        <ResultBox title="Average Reading Time" value="0" />
+        <ResultBox title="Longest Word" value="0" />
       </div>
     </div>
   )
