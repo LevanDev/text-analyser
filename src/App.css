@@ -1,0 +1,25 @@
+.result-bar {
+  padding: 15px 30px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+.result-box {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+.box-title {
+  font-size: 20px;
+  color: darkgray;
+}
+.box-value {
+  font-size: 20px;
+}
+.text-area {
+  margin-top: 40px;
+  content: icon;
+  padding: 40px;
+}
